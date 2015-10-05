@@ -1,0 +1,45 @@
+<head>
+  <link href="http://vjs.zencdn.net/5.0.0/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+  
+</head>
+
+<body>
+  <video id="vid" class="video-js" controls preload="auto" width="640" height="264"
+  poster="playerimage1.png" data-setup="{}">
+    <source src="http://6fm.nl:8000/mp3live" type='audio/mp3'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+<!-- <video id="vid"> </video> -->
+
+  <script src="http://vjs.zencdn.net/5.0.0/video.js"></script>
+  
+  <script type="text/javascript">
+  		var pics = {
+	  		dj1:"playerimage1.png",
+	  		dj2:"playerimage2.png",
+	  		dj3:"playerimage3.png"
+  		}
+  		
+  		var vidElement = document.getElementById("vid");
+  		var currentImage = 1;
+  		
+  		setInterval(function() {
+	  		console.log(vidElement.poster);
+		  		if(currentImage < 3) {
+					vidElement.poster = pics["dj"+(currentImage+1)];
+					currentImage = currentImage+1;			  		
+		  		} else {
+					vidElement.poster = pics["dj1"];
+					currentImage = 1;
+		  		}
+	  		
+	  		}, 3000)
+	</script>
+</body>
