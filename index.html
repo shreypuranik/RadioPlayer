@@ -8,13 +8,34 @@
 <style>
 
     .headline{
-        background: cornflowerblue;
+        background: #2B4F81;
         color: white;
         font-weight: bold;
+        text-transform: uppercase;
     }
     .video_js{
         width: 100%;
     }
+
+    .options{
+        list-style-type: none;
+    }
+    .options li{
+        width: 80%;
+        border: 1px solid black;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        padding-left: 10px;
+        height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .options li { background: #2B4F81; color: white; font-weight: normal;}
+    .options li:nth-child(odd) { background: lightblue; }
+
+    .options li:hover { background: #2B4F81;}
 </style>
 </head>
 
@@ -22,11 +43,12 @@
 <div class="row headline">
 
     <div class="col-sm-6 ">
-        <h3>&nbsp; RadioPlayer</h3>
+        <h3>&nbsp; Web based Radio Player</h3>
     </div>
     <div class="col-sm-6">
     </div>
 </div>
+<div class="row">&nbsp; </div>
 <div class="container">
 
     <div class="row">
@@ -40,10 +62,17 @@
     </p>
   </video>
             </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <p>This version of the RadioPlayer has been optimised using the fantastic Bootstrap grid system. Watch out for more updates soon!</p>
+        <ul class="options">
+            <li>Option One</li>
+            <li>Option Two</li>
+            <li>Option Three</li>
+        </ul>
+
+
         </div>
-        <div class="col-sm-4 ">
+        <div class="col-sm-2">
         </div>
         </div>
     </div>
