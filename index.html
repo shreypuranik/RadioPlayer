@@ -1,13 +1,36 @@
 <head>
   <link href="http://vjs.zencdn.net/5.0.0/video-js.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <!-- If you'd like to support IE8 -->
   <script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
-  
+
+<style>
+
+    .headline{
+        background: cornflowerblue;
+        color: white;
+        font-weight: bold;
+    }
+    .video_js{
+        width: 100%;
+    }
+</style>
 </head>
 
 <body>
-  <video id="vid" class="video-js" controls preload="auto" width="640" height="264"
+<div class="row headline">
+
+    <div class="col-sm-6 ">
+        <h3>&nbsp; RadioPlayer</h3>
+    </div>
+    <div class="col-sm-6">
+    </div>
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-4">
+  <video id="vid" class="video-js" controls preload="auto"
   poster="playerimage1.png" data-setup="{}">
     <source src="http://6fm.nl:8000/mp3live" type='audio/mp3'>
     <p class="vjs-no-js">
@@ -15,6 +38,14 @@
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
+            </div>
+        <div class="col-sm-4">
+            <p>This version of the RadioPlayer has been optimised using the fantastic Bootstrap grid system. Watch out for more updates soon!</p>
+        </div>
+        <div class="col-sm-4 ">
+        </div>
+        </div>
+    </div>
 
 <!-- <video id="vid"> </video> -->
 
@@ -22,9 +53,7 @@
   
   <script type="text/javascript">
   		var pics = {
-	  		dj1:"playerimage1.png",
-	  		dj2:"playerimage2.png",
-	  		dj3:"playerimage3.png"
+	  		dj1:"playerimage1.png"
   		}
   		
   		var vidElement = document.getElementById("vid");
