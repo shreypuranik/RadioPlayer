@@ -84,14 +84,15 @@
   
   <script type="text/javascript">
   		var pics = {
-	  		dj1:"playerimage1.png"
+            dj1:"playerimage1.png",
+            dj2:"playerimage2.png",
+            dj3:"playerimage3.png"
   		}
   		
   		var vidElement = document.getElementById("vid");
   		var currentImage = 1;
   		
   		setInterval(function() {
-	  		console.log(vidElement.poster);
 		  		if(currentImage < 3) {
 					vidElement.poster = pics["dj"+(currentImage+1)];
 					currentImage = currentImage+1;			  		
